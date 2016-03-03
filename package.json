@@ -1,7 +1,7 @@
 {
   "name": "prop-loader",
   "version": "0.0.0",
-  "description": "Webpack loader (like json-loader) allowing JSON properties to be extracted.",
+  "description": "Webpack loader to extract properties from JSON.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
