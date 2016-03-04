@@ -1,6 +1,6 @@
 {
   "name": "prop-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Webpack loader to extract properties from JSON.",
   "main": "index.js",
   "scripts": {

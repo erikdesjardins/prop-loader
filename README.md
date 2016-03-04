@@ -14,10 +14,10 @@ Based on [`json-loader`](https://github.com/webpack/json-loader).
 
 ```json
 {
-	"version": "1.2.3",
-	"background": {
-		"scripts": ["background.js"]
-	}
+  "version": "1.2.3",
+  "background": {
+    "scripts": ["background.js"]
+  }
 }
 ```
 
