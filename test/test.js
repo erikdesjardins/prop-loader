@@ -55,3 +55,8 @@ test('fails on non-existent property', t => {
 test('fails on non-existent deep property', t => {
 	t.throws(() => runLoader(json, 'background.foobar'), 'Property "background.foobar" not found');
 });
+
+test('passing a js object', t => {
+	const result = runLoader({ a: { b: { c: { d: ['e'] } } } }, 'a.b.c');
+	t.is(result, 'module.exports = {"d":["e"]};');
+});
