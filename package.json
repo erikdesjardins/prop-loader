@@ -4,7 +4,7 @@
   "description": "Webpack loader to extract properties from JSON.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava test/test.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/erikdesjardins/prop-loader/issues"
   },
-  "homepage": "https://github.com/erikdesjardins/prop-loader#readme"
+  "homepage": "https://github.com/erikdesjardins/prop-loader#readme",
+  "devDependencies": {
+    "ava": "^0.12.0"
+  }
 }
