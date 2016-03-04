@@ -60,3 +60,11 @@ test('passing a js object', t => {
 	const result = runLoader({ a: { b: { c: { d: ['e'] } } } }, 'a.b.c');
 	t.is(result, 'module.exports = {"d":["e"]};');
 });
+
+test('null, no query', t => {
+	t.is(runLoader(null), 'module.exports = null;');
+});
+
+test('fails on null with query', t => {
+	t.throws(() => runLoader(null, 'prop'), "Cannot use 'in' operator to search for 'prop' in null");
+});
