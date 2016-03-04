@@ -9,5 +9,5 @@ module.exports = function(source) {
 	var value = typeof source === 'string' ? JSON.parse(source) : source;
 	var path = this.query ? this.query.slice(1).split('.') : [];
 	var prop = path.reduce(function(obj, key) { return obj[key] }, value);
-	return 'module.exports = ' + JSON.stringify(prop, undefined, '\t') + ';';
+	return 'module.exports = ' + JSON.stringify(prop) + ';';
 };
