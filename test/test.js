@@ -34,7 +34,7 @@ test('null-valued property', t => {
 });
 
 test('fails on invalid json', t => {
-	t.throws(() => loader.call({}, '{'), 'Unexpected end of input');
+	t.throws(() => loader.call({}, '{'), 'Unexpected end of JSON input');
 });
 
 test('fails on empty query', t => {
