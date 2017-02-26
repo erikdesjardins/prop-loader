@@ -7,7 +7,6 @@
 'use strict';
 
 module.exports = function(source) {
-	this.cacheable && this.cacheable();
 	var value = typeof source === 'string' ? JSON.parse(source) : source;
 	var path = this.query ? this.query.slice(1).split('.') : [];
 	var prop = path.reduce(function(obj, key) {

@@ -9,14 +9,6 @@ const json = JSON.stringify({
 	nil: null
 });
 
-test('calls cacheable', t => {
-	t.plan(1);
-	const context = {
-		cacheable: () => t.pass()
-	};
-	loader.call(context, '{}');
-});
-
 test('no query', t => {
 	t.is(loader.call({}, json), 'module.exports = {"version":"1.2.3","background":{"scripts":["background.js"]},"nil":null};');
 });
