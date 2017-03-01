@@ -24,12 +24,12 @@ Based on [`json-loader`](https://github.com/webpack/json-loader).
 **example.js:**
 
 ```js
-var everything = require('prop!manifest.json');
+var everything = require('prop-loader!manifest.json');
 // everything === { "version": "1.2.3", "background": { "scripts": ["background.js"] } }
 
-var version = require('prop?version!manifest.json')
+var version = require('prop-loader?version!manifest.json')
 // version === "1.2.3";
 
-var scripts = require('prop?background.scripts!manifest.json')
+var scripts = require('prop-loader?background.scripts!manifest.json')
 // scripts === ["background.js"]
 ```
