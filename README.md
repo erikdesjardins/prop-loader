@@ -1,4 +1,4 @@
-# prop-loader [![Build Status](https://travis-ci.org/erikdesjardins/prop-loader.svg?branch=master)](https://travis-ci.org/erikdesjardins/prop-loader)
+# prop-loader
 
 Webpack loader to extract properties from JSON.
 
